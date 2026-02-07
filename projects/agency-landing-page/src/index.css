@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+/* ==================================================
+   🎨 SISTEMA DE DISEÑO SEMÁNTICO — FRONTEND MENTOR
+   ================================================== */
+
+@theme {
+
+/* =========================
+   TOKENS DE COLOR (VALORES BASE)
+   ========================= */
+
+/* ---- Acentos de marca ---- */
+  --color-token-accent-red: hsl(7, 99%, 70%);
+  --color-token-accent-yellow: hsl(51, 100%, 49%);
+
+/* ---- Colores de secciones ---- */
+  --color-token-graphic-text: hsl(167, 40%, 24%);
+  --color-token-photography-text: hsl(198, 62%, 26%);
+  --color-token-footer: hsl(167, 34%, 41%);
+
+/* ---- Neutrales ---- */
+  --color-token-gray-950: hsl(212, 27%, 19%);
+  --color-token-gray-600: hsl(213, 9%, 39%);
+  --color-token-gray-550: hsl(232, 10%, 55%);
+  --color-token-gray-400: hsl(210, 4%, 67%);
+  --color-token-white: hsl(0, 100%, 100%);
+
+/* =========================
+   COLORES SEMÁNTICOS (CÓMO SE USAN)
+   ========================= */
+
+/* ---- Fondos ---- */
+  --color-background-primary: var(--color-token-white);
+  --color-background-muted: var(--color-token-gray-400);
+  --color-background-footer: var(--color-token-footer);
+
+/* ---- Texto ---- */
+  --color-text-primary: var(--color-token-gray-950);
+  --color-text-secondary: var(--color-token-gray-600);
+  --color-text-muted: var(--color-token-gray-550);
+
+  --color-text-graphic: var(--color-token-graphic-text);
+  --color-text-photography: var(--color-token-photography-text);
+
+/* ---- Interacción / Marca ---- */
+  --color-brand-primary: var(--color-token-accent-red);
+  --color-brand-secondary: var(--color-token-accent-yellow);
+
+/* =========================
+   TIPOGRAFÍA SEMÁNTICA
+   ========================= */
+
+  --font-heading: "Fraunces", ui-serif, Georgia, serif;
+  --font-body: "Barlow", system-ui, sans-serif;
+
+/* Tamaño base del diseño */
+  --text-base: 18px;
+
+/* =========================
+   MAPEO A TAILWIND (DEFINIENDO LAS CLASES FINALES)
+   ========================= */
+
+  --color-primary: var(--color-brand-primary);
+  --color-secondary: var(--color-brand-secondary);
+  --color-surface: var(--color-background-primary);
+  --color-footer: var(--color-background-footer);
+}
+
+/* ======== GRID AREAS ======== */
+
+/* MOBILE (base) */
+@utility grid-areas-transform-mobile {
+  grid-template-areas:
+    "egg"
+    "transform";
+}
+
+/* DESKTOP — se define COMO OTRA utility (no anidada) */
+@utility grid-areas-transform-desktop {
+  grid-template-areas:
+    "transform egg";
+}
+
+/* Nombres de áreas */
+@utility grid-area-transform {
+  grid-area: transform;
+}
+
+@utility grid-area-egg {
+  grid-area: egg;
+}
