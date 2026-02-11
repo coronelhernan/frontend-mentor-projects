@@ -1,4 +1,4 @@
-import { IMAGES } from "../utils/landingImages";
+import { IMAGES } from "../../utils/landingImages";
 import { ResponsiveImage } from "./ResponsiveImage";
 const { mobile, desktop } = IMAGES;
 

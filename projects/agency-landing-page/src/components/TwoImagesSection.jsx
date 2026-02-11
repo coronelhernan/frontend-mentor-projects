@@ -1,5 +1,5 @@
-import { GraphicDesign } from "../components/GraphicDesing"
-import { Photography } from "../components/Photography"
+import { GraphicDesign } from "./GraphicDesing"
+import { Photography } from "./Photography"
 
 export function TwoImagesSection() {
   return (

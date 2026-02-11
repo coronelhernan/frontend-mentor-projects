@@ -1,7 +1,6 @@
 export function GraphicDesign() {
   return (
     <section className="relative min-h-[500px] lg:min-h-[650px] w-full">
-
       <picture>
         {/* Imagen para desktop */}
         <source 
@@ -29,7 +28,6 @@ export function GraphicDesign() {
           </p>
         </div>
       </div>
-
     </section>
   );
 }

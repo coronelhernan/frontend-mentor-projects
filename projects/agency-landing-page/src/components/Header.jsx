@@ -1,9 +1,10 @@
 import { useState } from "react";
-import { IMAGES, ICONS } from "../utils/landingImages";
+import { IMAGES, ICONS } from "../../utils/landingImages";
 import { ListHeaderItems } from "./ListHeaderItems";
+import { Logo } from "./Logo";
 
 const { mobile } = IMAGES;
-const { logo, menu, arrowDown } = ICONS;
+const { menu, arrowDown } = ICONS;
 
 export function Header() {
   const [visible, setVisible] = useState(false);
@@ -18,7 +19,7 @@ export function Header() {
       style={{ backgroundImage: `url(${mobile.header})` }}>
       {/* HEADER */}
       <header className="h-24 w-full flex items-center justify-between px-6">
-        <img src={logo} alt="Logo" className="h-6" />
+        <Logo className="w-36 h-24 text-white" />
 
         {/* BUTTON HAMBURGUER MENÚ */}
         <div className="relative">

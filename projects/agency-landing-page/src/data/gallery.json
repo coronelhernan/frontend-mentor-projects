@@ -1,0 +1,24 @@
+{
+  "images": [
+    {
+      "mobile": "/images/mobile/image-gallery-milkbottles.jpg",
+      "desktop": "/images/desktop/image-gallery-milkbottles.jpg",
+      "alt": "Milk bottles"
+    },
+    {
+      "mobile": "/images/mobile/image-gallery-orange.jpg",
+      "desktop": "/images/desktop/image-gallery-orange.jpg",
+      "alt": "Orange"
+    },
+    {
+      "mobile": "/images/mobile/image-gallery-cone.jpg",
+      "desktop": "/images/desktop/image-gallery-cone.jpg",
+      "alt": "Ice cream cone"
+    },
+    {
+      "mobile": "/images/mobile/image-gallery-sugar-cubes.jpg",
+      "desktop": "/images/desktop/image-gallery-sugarcubes.jpg",
+      "alt": "Sugar cubes"
+    }
+  ]
+}
