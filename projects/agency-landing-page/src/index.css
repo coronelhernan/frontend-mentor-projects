@@ -6,65 +6,68 @@
 
 @theme {
 
-/* =========================
-   TOKENS DE COLOR (VALORES BASE)
-   ========================= */
+/* ==================================================
+   TOKENS BASE (se mantienen como tu “fuente de verdad”)
+   ================================================== */
 
-/* ---- Acentos de marca ---- */
-  --color-token-accent-red: hsl(7, 99%, 70%);
-  --color-token-accent-yellow: hsl(51, 100%, 49%);
+--color-token-accent-red: hsl(7, 99%, 70%);
+--color-token-accent-yellow: hsl(51, 100%, 49%);
 
-/* ---- Colores de secciones ---- */
-  --color-token-graphic-text: hsl(167, 40%, 24%);
-  --color-token-photography-text: hsl(198, 62%, 26%);
-  --color-token-footer: hsl(167, 34%, 41%);
+--color-token-graphic-text: hsl(167, 40%, 24%);
+--color-token-photography-text: hsl(198, 62%, 26%);
+--color-token-footer: hsl(167, 34%, 41%);
 
-/* ---- Neutrales ---- */
-  --color-token-gray-950: hsl(212, 27%, 19%);
-  --color-token-gray-600: hsl(213, 9%, 39%);
-  --color-token-gray-550: hsl(232, 10%, 55%);
-  --color-token-gray-400: hsl(210, 4%, 67%);
-  --color-token-white: hsl(0, 100%, 100%);
+--color-token-gray-950: hsl(212, 27%, 19%);
+--color-token-gray-600: hsl(213, 9%, 39%);
+--color-token-gray-550: hsl(232, 10%, 55%);
+--color-token-gray-400: hsl(210, 4%, 67%);
+--color-token-white: hsl(0, 100%, 100%);
 
-/* =========================
-   COLORES SEMÁNTICOS (CÓMO SE USAN)
-   ========================= */
+/* ==================================================
+   MAPEO SEMÁNTICO → TAILWIND (lo IMPORTANTE)
+   ================================================== */
 
-/* ---- Fondos ---- */
-  --color-background-primary: var(--color-token-white);
-  --color-background-muted: var(--color-token-gray-400);
-  --color-background-footer: var(--color-token-footer);
+/* ---------- BACKGROUNDS ---------- */
+--color-bg-primary: var(--color-token-white);
+--color-bg-muted: var(--color-token-gray-400);
+--color-bg-footer: var(--color-token-footer);
 
-/* ---- Texto ---- */
-  --color-text-primary: var(--color-token-gray-950);
-  --color-text-secondary: var(--color-token-gray-600);
-  --color-text-muted: var(--color-token-gray-550);
+/* ---------- TEXTO ---------- */
+--color-text-primary: var(--color-token-gray-950);
+--color-text-secondary: var(--color-token-gray-600);
+--color-text-muted: var(--color-token-gray-550);
 
-  --color-text-graphic: var(--color-token-graphic-text);
-  --color-text-photography: var(--color-token-photography-text);
+--color-graphic: var(--color-token-graphic-text);
+--color-photography: var(--color-token-photography-text);
 
-/* ---- Interacción / Marca ---- */
-  --color-brand-primary: var(--color-token-accent-red);
-  --color-brand-secondary: var(--color-token-accent-yellow);
+/* ---------- MARCA / ACCENT ---------- */
+--color-brand-red: var(--color-token-accent-red);
+--color-brand-yellow: var(--color-token-accent-yellow);
 
-/* =========================
-   TIPOGRAFÍA SEMÁNTICA
-   ========================= */
+/* ---------- NEUTRALES (útiles para bordes, fondos, etc.) ---------- */
+--color-gray-950: var(--color-token-gray-950);
+--color-gray-600: var(--color-token-gray-600);
+--color-gray-550: var(--color-token-gray-550);
+--color-gray-400: var(--color-token-gray-400);
+--color-white: var(--color-token-white);
 
-  --font-heading: "Fraunces", ui-serif, Georgia, serif;
-  --font-body: "Barlow", system-ui, sans-serif;
+/* ==================================================
+   ALIASES FINALES (OPCIONALES PERO LIMPIOS)
+   ================================================== */
 
-/* Tamaño base del diseño */
-  --text-base: 18px;
+--color-primary: var(--color-brand-red);
+--color-secondary: var(--color-brand-yellow);
+--color-surface: var(--color-bg-primary);
+--color-footer: var(--color-bg-footer);
 
-/* =========================
-   MAPEO A TAILWIND (DEFINIENDO LAS CLASES FINALES)
-   ========================= */
+/* ==================================================
+   TIPOGRAFÍA
+   ================================================== */
 
-  --color-primary: var(--color-brand-primary);
-  --color-secondary: var(--color-brand-secondary);
-  --color-surface: var(--color-background-primary);
-  --color-footer: var(--color-background-footer);
+--font-heading: "Fraunces", ui-serif, Georgia, serif;
+--font-body: "Barlow", system-ui, sans-serif;
+
+--text-base: 18px;
 }
 
 /* ======== GRID AREAS ======== */
