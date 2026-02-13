@@ -9,19 +9,20 @@ export function CardProfile({ imageProfile, description, name, role }) {
       />
 
       {/* Description */}
-      <p className="font-body text-base text-gray-600 font-semibold">
+      <p className="font-body text-base text-gray-600 font-semibold whitespace-pre-line
+      lg:mt-6">
         {description}
       </p>
 
       {/* Name */}
-      <h3 className="text-xl font-heading font-bold text-black">
-				{name}
-			</h3>
+      <h3 className="text-xl font-heading font-bold text-black lg:mt-6">
+        {name}
+      </h3>
 
       {/* Role */}
-      <span className="text-base font-body font-semibold text-gray-400">
+      <span className="text-base font-body font-semibold text-gray-400 lg:-mt-6">
         {role}
-      </span>
+    </span>
     </article>
   )
 }

@@ -5,7 +5,7 @@ const LINKS = [
   { title: "Contact" },
 ];
 
-export function ListHeaderItems() {
+export function ListMenuItems() {
   return (
     <>
       {LINKS.map((item) => {

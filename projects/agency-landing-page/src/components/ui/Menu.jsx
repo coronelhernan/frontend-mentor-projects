@@ -1,8 +1,8 @@
-import { ListHeaderItems } from "./ListHeaderItems";
+import { ListMenuItems } from "../lists/ListMenuItems";
 
 export function Menu() {
   return (
-    <div className="absolute top-full right-0 mt-6 w-86">
+    <div className="absolute top-full right-0 mt-6 w-86 lg:hidden">
       {/* TRIÁNGULO */}
       <div
         className="absolute -top-5 right-0 w-0 h-0 border-l-[24px] border-l-transparent
@@ -14,7 +14,7 @@ export function Menu() {
         className="flex flex-col items-center justify-center gap-6 py-10 bg-white 
 				cursor-pointer"
       >
-        <ListHeaderItems />
+        <ListMenuItems />
       </div>
     </div>
   )

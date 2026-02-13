@@ -1,8 +1,8 @@
-import { Logo } from "./Logo";
-import { IconFacebook } from "../icons/iconFacebook";
-import { IconTwitter } from "../icons/iconTwitter";
-import { IconPinterest } from "../icons/IconPinterest"
-import { IconInstagram } from "../icons/IconInstagram";
+import { Logo } from "../../icons/Logo";
+import { IconFacebook } from "../../icons/iconFacebook";
+import { IconTwitter } from "../../icons/iconTwitter";
+import { IconPinterest } from "../../icons/IconPinterest"
+import { IconInstagram } from "../../icons/IconInstagram";
 
 const icons = [IconFacebook, IconInstagram, IconTwitter, IconPinterest];
 
@@ -21,7 +21,7 @@ export function Footer() {
         {icons.map((Icon, index) => (
           <Icon
             key={index}
-            className="w-6 h-6 text-graphic hover:text-white transition-colors duration-200"
+            className="w-6 h-6 text-graphic cursor-pointer hover:text-white transition-colors duration-200"
           />
         ))}
       </div>

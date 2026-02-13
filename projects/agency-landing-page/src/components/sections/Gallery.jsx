@@ -1,5 +1,5 @@
-import { ResponsiveImage } from "./ResponsiveImage";
-import gallery from "../data/gallery.json";
+import { ResponsiveImage } from "../ui/ResponsiveImage";
+import gallery from "../../data/gallery.json";
 
 export function Gallery() {
   return (

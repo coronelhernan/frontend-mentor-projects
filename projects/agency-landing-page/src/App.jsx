@@ -1,12 +1,11 @@
 import "./App.css";
-import { Header } from "./components/Header";
-import { TransformWithEgg } from "./components/TransformWithEgg";
-import { StandOutWithCup } from "./components/StandOutWithCup";
-import { TwoImagesSection } from "./components/TwoImagesSection"
-import { Testimonials } from "./components/Testimonials"
-import { Gallery } from "./components/Gallery"
-import { Footer } from "./components/Footer"
-
+import { Header } from "./components/sections/Header";
+import { TransformWithEgg } from "./components/sections/TransformWithEgg";
+import { StandOutWithCup } from "./components/sections/StandOutWithCup";
+import { TwoImagesSection } from "./components/sections/TwoImagesSection";
+import { Testimonials } from "./components/sections/Testimonials";
+import { Gallery } from "./components/sections/Gallery";
+import { Footer } from "./components/sections/Footer";
 
 export default function App() {
   return (

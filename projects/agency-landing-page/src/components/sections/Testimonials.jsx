@@ -1,5 +1,5 @@
-import { CardProfile } from './CardProfile';
-import data from '../data/profiles.json'
+import { CardProfile } from '../ui/CardProfile';
+import data from '../../data/profiles.json'
 
 export function Testimonials() {
   return (
@@ -9,7 +9,8 @@ export function Testimonials() {
       </h1> 
 
         {/* List of profiles*/}
-        <li className='flex flex-col w-full p-6 gap-4'>
+        <li className='flex flex-col justify-center items-center w-full h-auto p-6 gap-4 
+        lg:flex-row lg:gap-10'>
           {data.profiles.map(user => {
             return(
               <CardProfile 
