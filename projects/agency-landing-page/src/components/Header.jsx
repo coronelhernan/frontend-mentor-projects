@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { IMAGES, ICONS } from "../../utils/landingImages";
-import { ListHeaderItems } from "./ListHeaderItems";
 import { Logo } from "./Logo";
+import { Menu } from "./Menu";
 
 const { mobile } = IMAGES;
 const { menu, arrowDown } = ICONS;
@@ -23,18 +23,14 @@ export function Header() {
 
         {/* BUTTON HAMBURGUER MENÚ */}
         <div className="relative">
-          <button
-            onClick={handleClick}
-          >
+          <button onClick={handleClick}>
             <img src={menu} alt="Menu" className="h-5" />
           </button>
 
           {/* MENÚ  */}
           {visible && (
-            <div className="absolute flex flex-col items-center justify-center gap-5 top-full right-0 mt-18 h-96 bg-white w-86 cursor-pointer">
-              <ListHeaderItems />            
-            </div>
-          )} 
+            <Menu />
+          )}
         </div>
       </header>
 

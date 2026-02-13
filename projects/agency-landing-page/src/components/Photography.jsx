@@ -18,11 +18,11 @@ export function Photography() {
       </picture>
 
       <div className="absolute inset-0 flex items-end justify-center text-photography">
-        <div className="max-w-lg flex flex-col text-center gap-6 py-14">
-          <h2 className="text-3xl font-heading font-bold">
+        <div className="max-w-lg flex flex-col text-center gap-8 py-12">
+          <h2 className="text-3xl font-heading font-extrabold">
             Photography
           </h2>
-          <p className="text-xs font-semibold">
+          <p className="text-sm font-semibold">
             Increase your credibility by getting the most <br />
             stunning, high-quality photos that improve your <br />
             business image.

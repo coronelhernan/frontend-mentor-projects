@@ -16,9 +16,9 @@ export function GraphicDesign() {
         />
       </picture>
 
-      <div className="absolute inset-0 flex items-end justify-center p-10 text-graphic">
-        <div className="max-w-lg flex flex-col text-center gap-6 py-12">
-          <h2 className="text-3xl font-heading font-bold">
+      <div className="absolute inset-0 flex items-end justify-center py-6 px-2 text-graphic">
+        <div className="max-w-lg flex flex-col text-center gap-8 py-12">
+          <h2 className="text-3xl font-heading font-extrabold">
             Graphic Design
           </h2>
           <p className="text-sm font-semibold">

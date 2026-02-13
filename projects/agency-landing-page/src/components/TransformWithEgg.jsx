@@ -12,8 +12,11 @@ export function TransformWithEgg() {
         min-h-[600px]"
     >
       <div className="grid-area-transform flex flex-col justify-center text-center bg-white py-16 px-4 gap-6">
-        <h1 className="text-3xl text-muted font-heading font-bold">Transform Your <br /> brand</h1>
-        <p className="text-md font-body font-semibold text-gray-600">
+        <h1 className="text-3xl text-muted font-heading font-extrabold">
+          Transform your <br /> brand
+        </h1>
+
+        <p className="text-lg font-body font-semibold text-gray-600">
           We are a full-service creative agency <br />
           specializing in helping brands grow fast. <br />
           Engage your clients through compelling <br />
@@ -22,9 +25,10 @@ export function TransformWithEgg() {
         </p>
 
         <a href="#"
-        className="font-heading text-md font-bold
-          underline underline-offset-0
-        decoration-amber-100 decoration-8">
+        className="font-heading text-lg font-bold
+          underline underline-offset-2
+        decoration-yellow-200 decoration-6
+          hover:decoration-secondary">
           LEARN MORE
         </a>
       </div>

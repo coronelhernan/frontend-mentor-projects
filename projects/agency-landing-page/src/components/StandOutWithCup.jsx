@@ -24,11 +24,11 @@ export function StandOutWithCup() {
       </div>
 
       <div className="grid-area-standout flex flex-col justify-center text-center bg-white py-16 px-4 gap-6">
-        <h1 className="text-3xl text-muted font-heading font-bold">
+        <h1 className="text-3xl text-muted font-heading font-extrabold">
           Stand out to the <br /> 
           right audience
         </h1>
-        <p className="text-md font-body font-semibold text-gray-600">
+        <p className="text-lg font-body font-semibold text-gray-600">
           Using a collaborative formula of <br />
           designers, researchers, photographers, <br />
           videographers, and copywriters, we'll <br />
@@ -38,9 +38,10 @@ export function StandOutWithCup() {
 
         <a
           href="#"
-          className="font-heading text-md font-bold
+          className="font-heading text-lg font-bold
           underline underline-offset-0
-        decoration-red-100 decoration-8"
+        decoration-red-100 decoration-6
+          hover:decoration-primary"
         >
           LEARN MORE
         </a>

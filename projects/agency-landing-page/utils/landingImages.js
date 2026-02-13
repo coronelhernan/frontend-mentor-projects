@@ -19,10 +19,6 @@ export const IMAGES = {
 };
 
 export const ICONS = {
-  twitter: `${BASE}/icon-twitter.svg`,
-  facebook: `${BASE}/icon-facebook.svg`,
-  instagram: `${BASE}/icon-instagram.svg`,
-  pinterest: `${BASE}/icon-pinterest.svg`,
   logo: `${BASE}/logo.svg`,
   menu: `${BASE}/icon-hamburger.svg`,
   arrowDown: `${BASE}/icon-arrow-down.svg`,
