@@ -16,8 +16,8 @@ export function Header() {
   return (
     <section
       className="h-screen w-full text-center bg-cover bg-center relative
-  bg-[url('/images/mobile/image-header.jpg')]
-  lg:bg-[url('/images/desktop/image-header.jpg')]">
+      bg-[url('/images/mobile/image-header.jpg')]
+      lg:bg-[url('/images/desktop/image-header.jpg')]">
 
       {/* HEADER */}
       <header className="h-24 w-full flex items-center justify-between px-6">
@@ -54,8 +54,7 @@ export function Header() {
         </p>
         <img src={arrowDown}
           alt="Arrow down" 
-          className="h-28 mt-16 lg:h-48 lg:mt-20" 
-        />
+          className="h-28 w-10 mt-16 lg:h-48 lg:w-12 lg:mt-20" />
       </article>
     </section>
   );
