@@ -29,7 +29,7 @@ Creative agency landing page replicating the original challenge design, ensuring
 ## 🔗 Links
 
 - 🔍 Frontend Mentor solution:  
-  https://www.frontendmentor.io/solutions/TU-LINK
+  https://www.frontendmentor.io/solutions/responsive-landing-page-for-sunnyside-with-react-js-and-tailwind-css-ciLu2jtYhd
 
 - 💻 Source code / Full solution:  
   [View on GitHub](https://github.com/coronelhernan/frontend-mentor-projects/tree/main/projects/agency-landing-page)

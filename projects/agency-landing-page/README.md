@@ -29,7 +29,7 @@ Landing page de agencia creativa replicando el diseño original del challenge, a
 ## 🔗 Enlaces
 
 - 🔍 Solución en Frontend Mentor:  
-  https://www.frontendmentor.io/solutions/TU-LINK
+  https://www.frontendmentor.io/solutions/responsive-landing-page-for-sunnyside-with-react-js-and-tailwind-css-ciLu2jtYhd
 
 - 💻 Código fuente / Solución completa:  
   [Ver en GitHub](https://github.com/coronelhernan/frontend-mentor-projects/tree/main/projects/agency-landing-page)
