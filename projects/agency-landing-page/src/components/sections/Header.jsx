@@ -54,7 +54,7 @@ export function Header() {
         </p>
         <img src={arrowDown}
           alt="Arrow down" 
-          className="h-28 w-10 mt-16 lg:h-48 lg:w-12 lg:mt-20" />
+          className="h-36 w-10 mt-28 lg:h-48 lg:w-12 lg:mt-20" />
       </article>
     </section>
   );
