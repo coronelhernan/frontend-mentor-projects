@@ -7,10 +7,10 @@ import { ListHeaderItems } from "../lists/ListHeaderItems";
 const { menu, arrowDown } = ICONS;
 
 export function Header() {
-  const [visible, setVisible] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = () => {
-    setVisible(!visible);
+    setIsOpen(!isOpen);
   }
 
   return (
@@ -35,7 +35,7 @@ export function Header() {
           </div>
 
           {/* MENÚ  */}
-          {visible && (
+          {isOpen && (
             <Menu />
           )}
         </div>
