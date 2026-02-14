@@ -42,7 +42,7 @@ export function Header() {
       </header>
 
       {/* CONTENT */}
-      <article className="h-full flex flex-col items-center gap-2 mt-20">
+      <article className="h-full flex flex-col items-center gap-2 mt-12">
         {/* Mobile */}
         <p className="text-5xl font-bold text-white font-heading lg:hidden">
           WE ARE <br /> CREATIVES

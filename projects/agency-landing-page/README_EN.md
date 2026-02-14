@@ -29,7 +29,7 @@ Creative agency landing page replicating the original challenge design, ensuring
 ## 🔗 Links
 
 - 🔍 Frontend Mentor solution:  
-  https://www.frontendmentor.io/solutions/responsive-landing-page-for-sunnyside-with-react-js-and-tailwind-css-ciLu2jtYhd
+  <a href="https://www.frontendmentor.io/solutions/responsive-landing-page-for-sunnyside-with-react-js-and-tailwind-css-ciLu2jtYhd" target="_blank">View in Frontend Mentor</a>
 
 - 💻 Source code / Full solution:  
   [View on GitHub](https://github.com/coronelhernan/frontend-mentor-projects/tree/main/projects/agency-landing-page)
@@ -108,5 +108,9 @@ Modular structure based on components:
 
 Hernán Coronel  
 
-- GitHub: https://github.com/coronelhernan
-- Frontend Mentor: https://www.frontendmentor.io/profile/coronelhernan
+- GitHub: 
+<a href="https://github.com/coronelhernan" target="_blank">Github Profike</a>
+
+- Frontend Mentor: 
+<a href="https://www.frontendmentor.io/profile/coronelhernan" target="_blank">
+Frontend Mentor Profile</a>
