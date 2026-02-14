@@ -1,6 +1,6 @@
 import { Logo } from "../../icons/Logo";
-import { IconFacebook } from "../../icons/iconFacebook";
-import { IconTwitter } from "../../icons/iconTwitter";
+import { IconFacebook } from "../../icons/IconFacebook";
+import { IconTwitter } from "../../icons/IconTwitter";
 import { IconPinterest } from "../../icons/IconPinterest"
 import { IconInstagram } from "../../icons/IconInstagram";
 
