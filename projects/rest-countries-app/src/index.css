@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+@import "tailwindcss";
+
+
+/* ==================================================
+   SISTEMA DE DISEÑO SEMÁNTICO — FRONTEND MENTOR
+   ================================================== */
+
+@theme {
+
+/* =========================
+   DARK THEME
+   ========================= */
+
+--color-dark-theme-background: hsl(207 26% 17%);
+--color-dark-theme-elements: hsl(209 23% 22%);
+--color-dark-theme-text: hsl(0 100% 100%);
+
+
+/* =========================
+   LIGHT THEME
+   ========================= */
+
+--color-light-theme-background: hsl(0 0% 99%);
+--color-light-theme-text: hsl(200 15% 8%);
+--color-light-input-text: hsl(0 0% 50%);
+
+
+/* ==================================================
+   USE VARS
+   ================================================== */
+
+/* ---------- BACKGROUNDS ---------- */
+--color-dark-theme: var(--color-dark-theme-background);
+--color-light-theme: var(--color-light-theme-background);
+
+
+/* ---------- TEXTO ---------- */
+--color-light-text: var(--color-light-theme-text);
+--color-dark-text: var(--color-dark-theme-text);
+
+/* ---------- ELEMENTS ---------- */
+--color-dark-secondary: var(--color-dark-theme-elements);
+--color-input-color: var(--color-light-input-text);
+
+/* ---------- TIPOGRAPHY ---------- */
+
+--font-body: "Nunito Sans", system-ui, sans-serif;
+--font-family-body: var(--font-body);
+
+--text-home: 14px;
+--text-detail: 16px;
+}
