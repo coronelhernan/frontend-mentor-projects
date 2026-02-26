@@ -1,14 +1,9 @@
 import { Moon } from "lucide-react";
-import { useState } from "react";
+import { useTheme } from "../../hooks/useTheme";
 
 export default function Navbar() {
-  const [isDark, setIsDark] = useState(false);
-
-  const handleTheme = () => {
-    document.documentElement.classList.toggle("dark");
-    setIsDark(!isDark)
-  }
-
+  const { toggleTheme } = useTheme();
+  
   return (
     <nav
       className="bg-[var(--color-surface)] text-[var(--color-text)] 
@@ -21,7 +16,7 @@ export default function Navbar() {
 
       <div className="flex gap-2 items-center">
         <button
-          onClick={() => handleTheme()}
+          onClick={toggleTheme}
           className="p-2 rounded-full hover:opacity-80 transition"
         >
           <Moon size={24} className="text-[var(--color-text)]" />
