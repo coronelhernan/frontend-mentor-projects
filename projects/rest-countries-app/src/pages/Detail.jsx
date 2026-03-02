@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import countries from "../../data/data.json";
+import Navbar from "../components/sections/Navbar";
 import CountryDetail from "../components/ui/CountryDetail";
 
 export default function Detail() {
@@ -13,7 +14,8 @@ export default function Detail() {
   if (!country) return <p>Country not found</p>;
 
   return (
-		<div>
+<div className="min-h-screen grid grid-rows-[auto_1fr]">
+      <Navbar />
   		<CountryDetail country={country} />
 		</div>
 	);

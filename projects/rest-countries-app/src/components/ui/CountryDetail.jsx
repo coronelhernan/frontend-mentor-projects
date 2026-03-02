@@ -1,18 +1,14 @@
 import { ArrowLeft } from "lucide-react";
-import Navbar from "../sections/Navbar";
 import DataCountryDetail from "./DataCountryDetail";
 import { Link } from "react-router-dom";
 
 export default function CountryDetail({ country }) {
   return (
     <>
-      {/* Navbar full width */}
-      <Navbar />
-
       {/* Contenido */}
-      <section className="w-full px-8 py-6">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 gap-12 lg:grid-cols-2">
-          {/* Columna izquierda */}
+      <section className="h-full w-full px-8 py-6 lg:py-24 lg:px-0">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 gap-12 lg:grid-cols-2">
+          {/* Section flag country and link home */}
           <div className="flex flex-col gap-10 lg:gap-16">
             <nav>
               <Link
@@ -30,6 +26,7 @@ export default function CountryDetail({ country }) {
               </Link>
             </nav>
 
+            {/* Flag country */}
             <figure>
               <img
                 src={country.flag}
@@ -39,7 +36,7 @@ export default function CountryDetail({ country }) {
             </figure>
           </div>
 
-          {/* Columna derecha */}
+          {/* Data country */}
           <DataCountryDetail country={country} />
         </div>
       </section>

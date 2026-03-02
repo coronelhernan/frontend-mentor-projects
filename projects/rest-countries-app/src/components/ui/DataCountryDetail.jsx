@@ -9,7 +9,7 @@ export default function DataCountryDetail({ country }) {
     .filter(Boolean);
 
   return (
-    <article className="flex flex-col space-y-6">
+    <article className="flex flex-col space-y-6 lg:py-32 lg:px-10 lg:justify-center">
       <header>
         <h2 className="font-bold text-xl">{country.name}</h2>
       </header>
@@ -66,13 +66,15 @@ export default function DataCountryDetail({ country }) {
 
       {/* Border Countries */}
       <section
-        className="flex flex-col items-center gap-4
-             lg:flex-row lg:justify-center lg:items-center lg:mt-8"
+        className="flex flex-col items-start gap-4
+             lg:flex-row  lg:items-center lg:mt-8"
         aria-labelledby="border-countries"
       >
+        
+      {borderCountries && (
         <h3 id="border-countries" className="font-semibold text-base">
-          Border Countries:
-        </h3>
+          Border Countries:          
+        </h3>)}
 
         <ListBorderCountries array={borderCountries} />
       </section>
