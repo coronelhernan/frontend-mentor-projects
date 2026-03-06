@@ -28,10 +28,7 @@ export function useFilters(data) {
   const filteredCountries = useMemo(() => {
     return data.filter((country) => {
       const matchesRegion = region ? country.region === region : true;
-
-      const matchesSearch = country.name
-        .toLowerCase()
-        .includes(debounceSearch.toLowerCase());
+      const matchesSearch = country.name.toLowerCase().includes(debounceSearch.toLowerCase());
 
       return matchesRegion && matchesSearch;
     });

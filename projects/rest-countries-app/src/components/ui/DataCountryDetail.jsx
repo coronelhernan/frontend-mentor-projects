@@ -1,12 +1,14 @@
-import countries from "../../../data/data.json";
 import ListBorderCountries from "../list/ListBorderCountries";
 
 export default function DataCountryDetail({ country }) {
   if (!country) return null;
 
-  const borderCountries = country.borders
-    ?.map((code) => countries.find((c) => c.alpha3Code === code))
-    .filter(Boolean);
+  const currencies = Object.values(country.currencies ?? {})
+    .map(c => c.name)
+    .join(", ");
+
+  const languages = Object.values(country.languages ?? {})
+    .join(", ");
 
   return (
     <article className="flex flex-col space-y-6 lg:py-32 lg:px-10 lg:justify-center">
@@ -14,12 +16,8 @@ export default function DataCountryDetail({ country }) {
         <h2 className="font-bold text-xl">{country.name}</h2>
       </header>
 
-      <section className=" flex flex-col lg:flex-row lg:justify-between">
+      <section className="flex flex-col lg:flex-row lg:justify-between">
         <dl className="flex flex-col gap-2">
-          <div>
-            <dt className="font-semibold inline">Native Name:</dt>{" "}
-            <dd className="inline">{country.nativeName}</dd>
-          </div>
 
           <div>
             <dt className="font-semibold inline">Population:</dt>{" "}
@@ -40,44 +38,38 @@ export default function DataCountryDetail({ country }) {
             <dt className="font-semibold inline">Capital:</dt>{" "}
             <dd className="inline">{country.capital}</dd>
           </div>
+
         </dl>
 
         <dl className="flex flex-col gap-2">
+
           <div>
             <dt className="font-semibold inline">Top Level Domain:</dt>{" "}
-            <dd className="inline">{country.topLevelDomain?.join(", ")}</dd>
+            <dd className="inline">{country.tld?.join(", ")}</dd>
           </div>
 
           <div>
             <dt className="font-semibold inline">Currencies:</dt>{" "}
-            <dd className="inline">
-              {country.currencies?.map((c) => c.name).join(", ")}
-            </dd>
+            <dd className="inline">{currencies}</dd>
           </div>
 
           <div>
             <dt className="font-semibold inline">Languages:</dt>{" "}
-            <dd className="inline">
-              {country.languages?.map((l) => l.name).join(", ")}
-            </dd>
+            <dd className="inline">{languages}</dd>
           </div>
+
         </dl>
       </section>
 
-      {/* Border Countries */}
-      <section
-        className="flex flex-col items-start gap-4
-             lg:flex-row  lg:items-center lg:mt-8"
-        aria-labelledby="border-countries"
-      >
-        
-      {borderCountries && (
-        <h3 id="border-countries" className="font-semibold text-base">
-          Border Countries:          
-        </h3>)}
+      {country.borders?.length > 0 && (
+        <section className="flex flex-col items-start gap-4 lg:flex-row lg:items-center lg:mt-8">
+          <h3 className="font-semibold text-base">
+            Border Countries:
+          </h3>
 
-        <ListBorderCountries array={borderCountries} />
-      </section>
+          <ListBorderCountries array={country.borders} />
+        </section>
+      )}
     </article>
   );
 }

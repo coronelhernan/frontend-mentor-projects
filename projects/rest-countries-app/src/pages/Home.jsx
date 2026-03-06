@@ -1,12 +1,21 @@
 import Navbar from "../components/sections/Navbar";
 import { Search } from "lucide-react";
-import { useFilters } from "../hooks/useFilters";
-import countries from "../../data/data.json";
-import ListCountries from "../components/list/ListCountries";
+import { Countries } from "../components/Countries";
+import { useCountries } from "../hooks/useCountries";
 
 export default function Home() {
-  const { region, search, filteredCountries, handleRegion, handleSearch } =
-    useFilters(countries);
+  const {
+    loading,
+    error,
+    region,
+    search,
+    filteredCountries,
+    handleRegion,
+    handleSearch
+  } = useCountries();
+
+  if (loading) return <p>Loading countries...</p>;
+  if (error) return <p>Error: {error}</p>;
 
   return (
     <div className="bg-[var(--color-bg)] text-[var(--color-text)] min-h-screen flex flex-col items-center gap-5 lg:gap-12">
@@ -61,7 +70,7 @@ export default function Home() {
       </div>
 
       {/* List of countries */}
-      <ListCountries countries={filteredCountries} />
+      <Countries countries={filteredCountries} />
     </div>
   );
 }
