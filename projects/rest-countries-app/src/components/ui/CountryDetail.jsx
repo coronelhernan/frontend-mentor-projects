@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function CountryDetail({ country }) {
   return (
     <>
-      {/* Contenido */}
+      {/* Content */}
       <section className="h-full w-full px-8 py-6 lg:py-24 lg:px-0">
         <div className="max-w-7xl mx-auto grid grid-cols-1 gap-12 lg:grid-cols-2">
           {/* Section flag country and link home */}
