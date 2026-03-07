@@ -1,7 +1,11 @@
+// Navbar principal de la aplicación.
+// Incluye el botón para alternar entre modo claro y oscuro usando el hook useTheme.
+
 import { Moon } from "lucide-react";
 import { useTheme } from "../../hooks/useTheme";
 
 export default function Navbar() {
+  // Hook personalizado que maneja el estado del tema y su persistencia en localStorage
   const { toggleTheme, isDark } = useTheme();
 
   return (
@@ -13,18 +17,28 @@ export default function Navbar() {
       <h1 className="text-base font-bold lg:text-2xl">Where in the world?</h1>
 
       <div className="flex gap-2 items-center">
+        {/* Botón que alterna entre modo claro y oscuro */}
         <button
           onClick={toggleTheme}
           className="p-2 rounded-full hover:opacity-80 transition"
         >
+          {/* 
+            El icono cambia su relleno dependiendo del tema:
+            - Dark: luna rellena
+            - Light: luna solo contorno
+          */}
           {isDark ? (
-            <Moon size={24} 
-            fill="currentColor"
-            className="text-[var(--color-text)]" />
+            <Moon
+              size={24}
+              fill="currentColor"
+              className="text-[var(--color-text)]"
+            />
           ) : (
-            <Moon size={24} 
-            fill="none"
-            className="text-[var(--color-text)]" />
+            <Moon
+              size={24}
+              fill="none"
+              className="text-[var(--color-text)]"
+            />
           )}
         </button>
 
