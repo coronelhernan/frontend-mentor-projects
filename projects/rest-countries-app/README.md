@@ -1,16 +1,140 @@
-# React + Vite
+Este README está en español.  
+Si prefieres inglés, haz clic aquí: [English version](README_EN.md)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# REST Countries API Explorer
 
-Currently, two official plugins are available:
+Solución al desafío **REST Countries API with Color Theme Switcher** de Frontend Mentor.  
+Aplicación desarrollada con **React** que consume la API de países y permite explorar información detallada de cada uno.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 📌 Descripción
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+Aplicación que permite consultar información de países utilizando la API pública de Rest Countries.
 
-## Expanding the ESLint configuration
+Los usuarios pueden:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Ver todos los países disponibles
+- Buscar países por nombre
+- Filtrar por región
+- Ver información detallada de un país
+- Navegar hacia los países fronterizos
+- Alternar entre modo claro y oscuro
+
+La aplicación implementa **caching en memoria**, **custom hooks** y una arquitectura modular basada en componentes.
+
+---
+
+## 🖼 Captura de pantalla
+
+![REST Countries App](/projects/rest-countries-app/public/preview.jpg)
+
+---
+
+## 🔗 Enlaces
+
+- 🔍 Solución en Frontend Mentor  
+https://www.frontendmentor.io/solutions/add-your-solution-link
+
+- 💻 Código fuente  
+https://github.com/coronelhernan/frontend-mentor-projects/tree/main/projects/rest-countries
+
+- 🌐 Sitio en producción  
+https://your-deploy-url.com
+
+---
+
+## 🛠 Tecnologías utilizadas
+
+### 🎨 Frontend
+<p>
+  <img src="https://skillicons.dev/icons?i=html" />
+  <img src="https://skillicons.dev/icons?i=css" />
+  <img src="https://skillicons.dev/icons?i=js" />
+  <img src="https://skillicons.dev/icons?i=react" />
+  <img src="https://skillicons.dev/icons?i=tailwind" />
+</p>
+
+### ⚙️ Herramientas
+<p>
+  <img src="https://skillicons.dev/icons?i=vite" />
+  <img src="https://skillicons.dev/icons?i=pnpm" />
+</p>
+
+### ☁️ Deploy
+<p>
+  <img src="https://skillicons.dev/icons?i=netlify" />
+</p>
+
+---
+
+## 🧠 Decisiones técnicas
+
+### 📦 Arquitectura basada en hooks
+
+Se crearon **custom hooks** para encapsular lógica reutilizable:
+
+- `useCountries` → obtiene y gestiona la lista de países
+- `useCountry` → obtiene la información detallada de un país
+- `useFilters` → maneja la búsqueda y el filtrado
+- `useDebounce` → optimiza la búsqueda evitando renders innecesarios
+- `useTheme` → gestiona el modo oscuro utilizando `localStorage`
+
+Esto permite separar **lógica de negocio** de los componentes de UI.
+
+---
+
+### ⚡ Sistema de cache
+
+El servicio `countries.js` implementa **cache en memoria utilizando `Map`** para evitar múltiples peticiones a la API cuando los datos ya fueron solicitados.
+
+Se manejan tres caches:
+
+- lista completa de países
+- detalles individuales
+- países fronterizos
+
+Esto mejora la **performance** y reduce llamadas innecesarias a la API.
+
+---
+
+### 🧩 Componentes reutilizables
+
+La interfaz se divide en componentes UI reutilizables como:
+
+- `CountryCard`
+- `BorderItem`
+- `ListBorderCountries`
+- `Navbar`
+
+Esto permite mantener una estructura clara y escalable.
+
+---
+
+## 🚧 Desafíos enfrentados
+
+- Manejo de navegación entre países utilizando **React Router**.
+- Normalización de datos provenientes de la API.
+- Implementación de **caching manual** para optimizar las peticiones.
+- Manejo de estados derivados utilizando **useMemo** para evitar cálculos innecesarios.
+
+---
+
+## 📈 Posibles mejoras
+
+- Implementar **React Query o SWR** para manejar fetching y cache.
+- Mejorar accesibilidad agregando atributos ARIA.
+- Agregar animaciones sutiles en transiciones de páginas.
+- Implementar tests de componentes.
+
+---
+
+## 👤 Autor
+
+Hernán Coronel
+
+- GitHub  
+https://github.com/coronelhernan
+
+- Frontend Mentor  
+https://www.frontendmentor.io/profile/coronelhernan
