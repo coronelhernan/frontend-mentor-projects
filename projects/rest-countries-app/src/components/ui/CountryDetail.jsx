@@ -19,7 +19,7 @@ export default function CountryDetail({ country }) {
   return (
     <>
       {/* Contenedor principal del contenido */}
-      <section className="h-full w-full px-8 py-6 lg:py-24 lg:px-0">
+      <section className="h-full w-full px-8 py-6 lg:py-24">
         <div className="max-w-7xl mx-auto grid grid-cols-1 gap-12 lg:grid-cols-2">
 
           {/* 
@@ -44,11 +44,11 @@ export default function CountryDetail({ country }) {
             </nav>
 
             {/* Imagen de la bandera del país */}
-            <figure>
+            <figure className="max-w-lg">
               <img
                 src={country.flag}
                 alt={`Flag of ${country.name}`}
-                className="w-full max-h-[400px] object-contain"
+                className="w-full object-contain"
               />
             </figure>
           </div>

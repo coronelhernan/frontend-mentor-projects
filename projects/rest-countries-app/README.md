@@ -37,11 +37,10 @@ La aplicación implementa **caching en memoria**, **custom hooks** y una arquite
 https://www.frontendmentor.io/solutions/add-your-solution-link
 
 - 💻 Código fuente  
-https://github.com/coronelhernan/frontend-mentor-projects/tree/main/projects/rest-countries
+https://github.com/coronelhernan/frontend-mentor-projects/tree/main/projects/rest-countries-app
 
 - 🌐 Sitio en producción  
-https://your-deploy-url.com
-
+https://rest-countries-app-2026.netlify.app/
 ---
 
 ## 🛠 Tecnologías utilizadas

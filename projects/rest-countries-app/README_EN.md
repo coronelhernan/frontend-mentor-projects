@@ -37,10 +37,10 @@ The application implements **in-memory caching**, **custom hooks**, and a modula
 https://www.frontendmentor.io/solutions/add-your-solution-link
 
 - 💻 Source Code  
-https://github.com/coronelhernan/frontend-mentor-projects/tree/main/projects/rest-countries
+https://github.com/coronelhernan/frontend-mentor-projects/tree/main/projects/rest-countries-app
 
 - 🌐 Live Site  
-https://your-deploy-url.com
+https://rest-countries-app-2026.netlify.app/
 
 ---
 
