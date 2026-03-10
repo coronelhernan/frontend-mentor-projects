@@ -27,7 +27,7 @@ export default function CountryDetail({ country }) {
             - Botón para volver a la página principal
             - Bandera del país
           */}
-          <div className="flex flex-col gap-10 lg:gap-16">
+          <div className="flex flex-col gap-10 lg:gap-16 min-w-0">
             
             {/* Navegación para volver al home */}
             <nav>
@@ -44,11 +44,11 @@ export default function CountryDetail({ country }) {
             </nav>
 
             {/* Imagen de la bandera del país */}
-            <figure className="max-w-lg">
+            <figure className="w-full max-w-lg h-[320px] flex items-center justify-center">
               <img
                 src={country.flag}
                 alt={`Flag of ${country.name}`}
-                className="w-full object-contain"
+                className="max-w-full max-h-full object-contain"
               />
             </figure>
           </div>
