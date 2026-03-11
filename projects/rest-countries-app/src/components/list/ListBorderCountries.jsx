@@ -48,7 +48,7 @@ export default function ListBorderCountries({ array }) {
   }, [array]); // Se vuelve a ejecutar si cambia el array de códigos
 
   return (
-    <ul className="flex flex-wrap gap-2">
+    <ul className="flex flex-wrap gap-4 lg:gap-3">
       {countries.map((country) => (
         <li key={country.code}>
           <Link
