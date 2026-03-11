@@ -50,7 +50,7 @@ export default function CountryCard({
         <div className="px-8 py-6 space-y-2 lg:px-6 lg:py-12">
           
           {/* Nombre del país */}
-          <h3 className="text-[var(--color-text)] font-bold text-xl">{name}</h3>
+          <h2 className="text-[var(--color-text)] font-bold text-xl">{name}</h2>
 
           {/* Información básica del país */}
           <p className="text-[var(--color-text)] text-base lg:text-sm">

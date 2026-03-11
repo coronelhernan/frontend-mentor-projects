@@ -20,6 +20,7 @@ export default function Navbar() {
         {/* Botón que alterna entre modo claro y oscuro */}
         <button
           onClick={toggleTheme}
+          aria-label="Toggle dark mode"
           className="p-2 rounded-full hover:opacity-80 transition"
         >
           {/* 

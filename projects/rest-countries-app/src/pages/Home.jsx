@@ -80,6 +80,11 @@ export default function Home() {
           />
         </div>
 
+        {/* Label for select */}
+        <label htmlFor="region" className="sr-only">
+          Filter by region
+        </label>
+
         {/* Region filter */}
         <select
           value={region}
