@@ -34,7 +34,7 @@ La aplicación implementa **caching en memoria**, **custom hooks** y una arquite
 ## 🔗 Enlaces
 
 - 🔍 Solución en Frontend Mentor  
-https://www.frontendmentor.io/solutions/add-your-solution-link
+https://www.frontendmentor.io/solutions/rest-countries-app-with-react-js-and-tailwind-css-NaZwMJkDYv
 
 - 💻 Código fuente  
 https://github.com/coronelhernan/frontend-mentor-projects/tree/main/projects/rest-countries-app

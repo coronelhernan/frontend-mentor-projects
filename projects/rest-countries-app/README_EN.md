@@ -34,7 +34,7 @@ The application implements **in-memory caching**, **custom hooks**, and a modula
 ## 🔗 Links
 
 - 🔍 Frontend Mentor Solution  
-https://www.frontendmentor.io/solutions/add-your-solution-link
+https://www.frontendmentor.io/solutions/rest-countries-app-with-react-js-and-tailwind-css-NaZwMJkDYv
 
 - 💻 Source Code  
 https://github.com/coronelhernan/frontend-mentor-projects/tree/main/projects/rest-countries-app
