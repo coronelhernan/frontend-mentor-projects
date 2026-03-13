@@ -1,9 +1,12 @@
 import './App.css'
-import { Text } from '@chakra-ui/react'
+import { Navbar } from './components/sections/Navbar'
+import { Box } from '@chakra-ui/react'
 
 function App() {
   return (
-    <Text>Hola mundo</Text>
+    <>
+      <Navbar />
+    </>
   )
 }
 
